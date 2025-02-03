@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        body {
+            transition: background 0.3s, color 0.3s;
+        }
+        .dark-mode {
+            background: #121212;
+            color: #fff;
+        }
+        header nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 1rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        .project-card {
+            padding: 15px;
+            border-radius: 8px;
+            background: rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        #scrollToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px;
+            border: none;
+            background: #007bff;
+            color: white;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <button id="darkModeToggle">🌙</button>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Welcome to My Portfolio</h1>
+            <h3>IT103 SUMMATIVE PART 3</h3>
+            <a href="#projects" class="btn">View Projects</a>
+        </div>
+    </section>
+
+    <section class="about section">
+        <h2>About Clive</h2>
+        <div class="about-container">
+            <img src="clib.jpg" alt="Profile Picture" style="display: block; margin: auto; width: 25%; height: auto;">
+
+            <p>I'm Clive Glover M. Palanca, a Computer Science student fueled by curiosity and a love for building things that matter. Whether it's crafting sleek full-stack applications, diving into AI, or tackling algorithmic challenges, I thrive on pushing my coding skills further. Hackathons, hands-on projects, and collaborative problem-solving keep me sharp, and I’m always eager to explore new technologies. When I’m not coding, you’ll catch me gaming, binge-watching tech content, or chasing fresh ideas. Let’s connect and create something impactful!</p>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>MySQL/SQL</li>
+            <li>Responsive Web Design</li>
+            <li>Java & Python</li>
+        </ul>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <a href="https://github.com/Clveee/clvee.github.io" target="_blank">
+                    <h3>Project 1</h3>
+                    <p>Explore PH and Course Schedule.</p>
+                </a>
+            </div>
+            <div class="project-card">
+                <a href="https://github.com/Clveee/Palanca_JS_Activity_W5" target="_blank">
+                    <h3>Project 2</h3>
+                    <p>Activity 5 Week 5.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="questions">
+        <h2>Following Questions</h2>
+        <ol>
+            <li>
+                <strong>How does your portfolio show your skills in HTML, CSS, and JavaScript?</strong>
+                <p>My portfolio showcases HTML skills through semantic structuring and proper use of links and sections. It demonstrates CSS proficiency with grid layouts, styling, and responsive design techniques. JavaScript expertise is highlighted by interactive elements and the integration of external libraries like Font Awesome.</p>
+            </li>
+            <li>
+                <strong>What project awards and assignments highlight your progress in the program?</strong>
+                <p>The project assignments, including "Explore PH and Course Schedule" and "Activity 5 Week 5", showcase my progress in JavaScript and database handling, demonstrating my growing knowledge and problem-solving abilities in the program.</p>
+            </li>
+            <li>
+                <strong>How does your portfolio creatively showcase your web programming knowledge?</strong>
+                <p>The portfolio showcases web programming skills by incorporating interactive elements like scrolling, particle effects, and custom animations. It adapts to different screen sizes for a seamless user experience. The use of external libraries like PicoCSS and Particles.js enhances the site's visual appeal.</p>
+            </li>
+        </ol>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:clivepalanca5@gmail.com">clivepalanca5@gmail.com</a></p>
+        <p>Phone: <a href="tel:+639277600032">+63 9277600032</a></p>
+
+        <p>Follow me on:</p>
+        <div class="social-links">
+            <a href="https://github.com/Clveee" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/clive-palanca-03672b298/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://www.facebook.com/clive23036" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+        </div>
+    </section>
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="/javascript/portfolio.js"></script> 
+    </section>
+
+    <button id="scrollToTop"><i class="fas fa-arrow-up"></i></button>
+    
+    <script>
+        const scrollToTopBtn = document.getElementById("scrollToTop");
+        const darkModeToggle = document.getElementById("darkModeToggle");
+
+        window.addEventListener("scroll", () => {
+            scrollToTopBtn.style.display = window.scrollY > 300 ? "block" : "none";
+        });
+
+        scrollToTopBtn.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+        darkModeToggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+        });
+    </script>
+</body>
+</html>
